@@ -1,10 +1,10 @@
 # Wideband FM
 Wideband FM examples for GNU Radio and HackRF / rad1o
 
-## Crosby Stereo-FM transmitter and receiver
-The Video2000 of FM stereophonic broadcasting.  
-https://en.wikipedia.org/wiki/Crosby_system
-
 Usage:
-
-	mpg123 -s -v http://stream-uk1.radioparadise.com/mp3-128 |sox -t raw -c 2 -b 16 -e signed -r 44100 - -t wav -c 2 - |./crosby_tx.py
+  --input-rate=INPUT_RATE                Set input sampling rate [default=44.1kHz]
+  --samp-rate=SAMP_RATE                  Set output sampling rate [default=2MHz]
+  --audio-rate=AUDIO_RATE                Set audio processing rate [default=200kHz]
+  --audio-bw=AUDIO_BW                    Set audio bandwidth [default=15kHz]
+  --fm-bw=FM_BW                          Set FM bandwidth [default=75kHz]
+  --gui-update-period=GUI_UPDATE_PERIOD  Set GUI update period [default=100ms]
